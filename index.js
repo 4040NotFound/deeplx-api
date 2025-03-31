@@ -27,7 +27,7 @@ app.all('*', async (req, res) => {
         method: req.method,
         url: targetURL + req.path,
         data: {
-            text: req.body.text,
+            text_list: req.body.text,
             source_lang: sourceLang,
             target_lang: targetLang,
         },
